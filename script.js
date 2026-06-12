@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // 2. Kliknięcie przycisku "Akceptuję"
-function acceptRegulations() {
+function akceptRegulations() {
     const regulationsSection = document.querySelector('.regulations_section');
     const lineSection = document.querySelector('.line_section');
     
@@ -59,7 +59,7 @@ function selectLine(lineNumber, buttonElement) {
     activeLine = lineNumber;
 
     // Przełączanie klasy active na przyciskach
-    document.querySelectorAll('.buttons_container button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.line_section button').forEach(btn => btn.classList.remove('active'));
     buttonElement.classList.add('active');
 
     // Aktualizacja nagłówka tekstowego
