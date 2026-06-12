@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kalkulator ciast dla mondelez</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Regulamin-->
+       <div class="regulations_section">
+            <h3>
+                Regulamin
+            </h3>
+            <p>
+                Kalkulator jest przeznaczony wyłącznie do użytku własnego.  
+                Zabrania się jego kopiowania, udostępniania lub publikowania bez zgody autora.  
+                Korzystając z aplikacji, akceptujesz te warunki.
+            </p>
+            <button class="btn_akcept" onclick="akceptRegulations()">Akceptuję</button>
+        </div>
+        Wybór lini produkcyjnej
+        <div class="line_section">
+                <h3>
+                    Wybierz Linie:
+                </h3>
+                <div class="buttons_container">
+                    <button class="btn btn_line_1 active" onclick="selectLine(1, this)">Linia 1</button>
+                    <button class="btn btn_line_2" onclick="selectLine(2, this)">Linia 2</button>
+                    <button class="btn btn_line_3" onclick="selectLine(3, this)">Linia 3</button>
+                    <button class="btn btn_line_4" onclick="selectLine(4, this)">Linia 4</button>
+                    <button class="btn btn_line_BR" onclick="selectLine(5, this)">Linia BR</button>
+                </div>
+            <div class="calculator_form">
+                <h4 id="current_line_title">Wybrana: Linia 1</h4>
+                <div class="input_group">
+                    <label for="product_select"></label>Wybierz asortyment: </label>
+                        <select id="product_select" onchange="calculate()"></select>
+                </div>
+                <div class="input_group">
+                    <label for=""boxes_input>Ilość kartonów w planie:</label>
+                    <input type="number" id="boxes_input" placeholder="Wpisz ilość kartonów" oninput="calculate()">
+                </div>
+                <div class="result_box" >
+                    <h4>Potrzebna ilość ciast:</h4>
+                    <span id="final_result">0.00</span>
+                </div>
+            </div>
+        </div>
+         <footer class="page-footer">
+    © 2026 Damian Jórga. Wszelkie prawa zastrzeżone.
+  </footer>
+
+         <script src="script.js"></script>
+    </body>
+</html>
