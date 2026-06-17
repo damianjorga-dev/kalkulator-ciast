@@ -22,7 +22,6 @@
             </p>
             <button class="btn_akcept" onclick="akceptRegulations()">Akceptuję</button>
         </div>
-        <h4 class="shadow">Wybór lini produkcyjnej</h4>
         <div class="line_section">
                 <h3>
                     Wybierz Linie:
@@ -40,6 +39,22 @@
                 <div class="input_group">
                     <label for="product_select"></label>Wybierz asortyment: </label>
                         <select id="product_select" onchange="calculate()"></select>
+                </div>
+                <div class="input_group">
+                    <label for="loss_select">Odpad (%)</label>
+                    <select id="loss_select" onchange="calculate()">
+                        <option value="0">0%</option>
+                        <option value="1">1%</option>
+                        <option value="2">2%</option>
+                        <option value="3">3%</option>
+                        <option value="4">4%</option>
+                        <option value="5">5%</option>
+                        <option value="6">6%</option>
+                        <option value="7">7%</option>
+                        <option value="8">8%</option>
+                        <option value="9">9%</option>
+                        <option value="10">10%</option>
+                    </select>
                 </div>
                 <div class="input_group">
                     <label for=""boxes_input>Ilość kartonów w planie:</label>
