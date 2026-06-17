@@ -21,6 +21,9 @@ body {
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(2,2,2,2.1);
 }
+.input_group {
+    margin: 5px;
+}
 .btn {
     margin: 10px;
     padding: 15px;
